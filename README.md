@@ -1,2 +1,2 @@
-# egyptarchive
-An open archive
+# EGYPTARCHIVE.COM
+An open archive initiative
