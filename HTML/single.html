@@ -1,0 +1,498 @@
+<html !DOCTYPE lang="ar">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <title>أرشيف مصر | المعرفة سلطة</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/droidarabickufi.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Amiri:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/pdf.js/build/pdf.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle2.scrollVert.js"></script>
+    <script src="https://malsup.github.com/jquery.cycle2.carousel.js"></script>
+    <script src="http://malsup.github.io/jquery.blockUI.js"></script>
+    <script>
+    $(function() {
+    $( "#docTabs" ).tabs({
+     hide: {
+        effect:     "slide",
+        duration:   300
+     }
+        
+    });
+  });
+    </script>
+    <script type="text/javascript">
+      'use strict';
+
+      getPdf('/assets/file/test_file.pdf', function getPdfHelloWorld(data) {
+          //
+          // Instantiate PDFDoc with PDF data
+          //
+          var pdf = new PDFDoc(data);
+          var page = pdf.getPage(1);
+          var scale = 1.5;
+
+          //
+          // Prepare canvas using PDF page dimensions
+          //
+          var canvas = document.getElementById('fileView');
+          var context = canvas.getContext('2d');
+          canvas.height = page.height * scale;
+          canvas.width = page.width * scale;
+
+          //
+          // Render PDF page into canvas context
+          //
+          page.startRendering(context);
+      });
+    </script>
+       <script>
+    $(document).ready(function() {
+        
+        $('.about').click(function() {
+            $.blockUI({message:$('.pageAbout'),
+                       css: {border:'none',cursor:'default'}});
+        });
+        $('.close').click(function() {
+            $.unblockUI();
+            return false;
+        });
+    });
+    </script>
+    <script>
+    $(document).ready(function() {
+        
+        $('.login').click(function() {
+            $.blockUI({message:$('.pageSign'),
+                       css: {border:'none',cursor:'default'}});
+        });
+        $('.close').click(function() {
+            $.unblockUI();
+            return false;
+        });
+    });
+    </script>
+    <script>
+    $(document).ready(function() {
+        
+        $('#search').click(function() {
+            $.blockUI({message:$('.pageSearch'),
+                       css: {border:'none',cursor:'default'}});
+        });
+        $('.close').click(function() {
+            $.unblockUI();
+            return false;
+        });
+    });
+    </script>
+    
+</head>
+<body id="single" class="no-sidebar">
+    <div class="overlay pageAbout">
+        <div class="aboutOpen">
+            <i class="fa fa-close close"></i>
+            <div class="article col6">
+                <div class="header">
+                    <div class="logo"><img src="assets/img/logo-arch.png"></div>
+                </div>
+                <div class="body">
+                    <p>يمارس الأرشيف الوطني دوره الفعال والنشط في إدارة وتجميع سجلات ومحفوظات الأجهزة الحكومية وترويج استخدامها فيما بين الجامعات، والأجهزة التعليمية، ومعاهد البحوث، وفيما بين جمهور المستفيدين.
+</p>
+                    <p>تُشكل الأرشيفات الوطنية أو مراكز الوثائق الوطنية جزءاً من ثلاث مؤسسات متداخلة هي: المكتبة الوطنية، والمتحف الوطني، والأرشيف الوطني، ولكل منها طابع فردي مميز لها وبرامج مختلفة للخدمة، إلا أن الأرشيف الوطني يتميز بارتباطه بالأجهزة الحكومية، والجامعات والمؤسسات التعليمية، وأجهزة البحث والصناعة،وكذلك الأفراد. وبين كل تلك المؤسسات.</p>
+                    <p>تُشكل الأرشيفات الوطنية أو مراكز الوثائق الوطنية جزءاً من ثلاث مؤسسات متداخلة هي: المكتبة الوطنية، والمتحف الوطني، والأرشيف الوطني، ولكل منها طابع فردي مميز لها وبرامج مختلفة للخدمة، إلا أن الأرشيف الوطني يتميز بارتباطه بالأجهزة الحكومية، والجامعات والمؤسسات التعليمية، وأجهزة البحث والصناعة،وكذلك الأفراد. وبين كل تلك المؤسسات.</p>
+                    <p>للمزيد من الاستفسارات عن الوثائق يمكنكم تصفح <a href="help.html">المساعدة</a>. كما يمكنكم <a href="login.html">تسجيل الدخول</a>. وللتعرف على <a href="use.html">شروط الاستخدام</a> و<a href="use.html">سياسة الخصوصية</a>.</p>
+                </div>
+                <div class="footer">
+                    <p>أرشيف مصر هو أحد مشروعات برنامج حرية تداول المعلومات <a href="sitcegypt.org">مركز دعم لتقنية المعلومات</a></p>
+                    <p>تصميم الموقع وتطويره تم من خلال <a href="http://sitcegypt.org">مركز دعم لتقنية المعلومات</a> و<a href="http://huridocs.org">هوريدكس</a></p>
+                    <ul class="social">
+                        <li><a href="https://fb.com/sitcegypt.org"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/sitcegypt.org"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                    <div class="creativecommon">هذا المُصنَّف مرخص بموجب رخصة المشاع الإبداعي نَسب المُصنَّف 4.0 دولي.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay pageSign">
+        <div class="signOpen">
+            <i class="fa fa-close close"></i>
+            <div class="article col4">
+                <div class="header">
+                    <div class="logo"><img src="assets/img/logo-arch.png"></div>
+                    <h1>مرحباً</h1>
+                    <h4>مزيد من الإعدادات لتنظيم الأرشيف الخاص بك</h4>
+                </div>
+                <div class="body">
+                    <div class="login">
+                        <div class="sociaLogin clearfix">
+                            <h5 class="lines"><span>تسجيل الدخول من خلال</span></h5>
+                            <ul class="socLogin">
+                                <li><button class="btnFb"><i class="fa fa-facebook"></i></button></li>
+                                <li><button class="btnTw"><i class="fa fa-twitter"></i></button></li>
+                                <li><button class="btnGp"><i class="fa fa-google-plus"></i></button></li>
+                                <li><button class="btnLi"><i class="fa fa-linkedin"></i></button></li>
+                            </ul>
+                        </div>
+                        <div class="form">
+                            <h5 class="lines"><span>أو</span></h5>
+                            <form id="formLogin">
+                                <div class="formGrp">
+                                    <input id="username" class="formInput" name="username" type="text" placeholder="البريد الإلكتروني أو اسم المستخدم" title="ادخال بريد الكتروني مسجل أو اسم مستخدم">
+                                </div>
+                                <div class="formGrp">
+                                    <input id="pwd" class="formInput" name="password" type="password" placeholder="كلمة المرور" title="ادخال كلمة مرور مكون على الأقل من أربعة أحرف">
+                                </div>
+                                <div class="formGrp formInfo">
+                                    <label class="remember"><input type="checkbox"> تذكرني</label>
+                                    <a id="forgotPwd" class="pwdForgot">نسيت كلمة المرور؟</a> 
+                                </div>
+                                <button id="button" class="button submit" type="submit">تسجيل الدخول</button>       
+                            </form>
+                        </div>
+                    </div>
+                    <div class="signup">
+                        <h4>لانشاء حساب جديد</h4>
+                        <form id="formSignup">
+                            <div class="formGrp">
+                                <input id="name" class="formInput" name="name" type="text" placeholder="الاسم بالكامل" title="الاسم بالكامل لا يقل عن 4 أحرف">
+                            </div>
+                            <div class="formGrp">
+                                <input id="email" class="formInput" name="email" type="email" placeholder="البريد الإلكتروني" title="ادخال بريد الكتروني صحيح">
+                            </div>
+                            <div class="formGrp">
+                                    <input id="pwd" class="formInput" name="password" type="password" placeholder="كلمة المرور" title="ادخال كلمة مرور مكون على الأقل من أربعة أحرف">
+                            </div>
+                            <div class="formInfo">
+                            <p>بانضمامك للموقع، فإنك توافق على <a href="use.html">شروط الاستخدام وسياسة الخصوصية</a></p>
+                            </div>
+                            <button id="button" class="button submit" type="submit">انضم الآن</button>         
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay pageSearch">
+        <div class="searchOpen">
+            <i class="fa fa-close close"></i>
+            <div class="article col8">
+                <div class="header">
+                    <form id="searchForm">
+                        <i class="fa fa-search"></i>
+                        <input type="text" placeholder="ادخل كلمة البحث" class="formInput">
+                    </form>
+                </div>
+                    <div class="searchResults body">
+                        <ul class="clearfix">
+                        <li class="resultItem">
+                            <img class="searchThumb" src="assets/img/thumb-100x150/doc1.jpg">
+                            <h6 clas="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h6>
+                            <span class="docBy">ديوان الداخلية</span>
+                            <span class="keywords">قرار، افادة</span>
+                        </li>
+                        <li class="resultItem">
+                            <img class="searchThumb" src="assets/img/thumb-100x150/doc1.jpg">
+                            <h6 clas="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h6>
+                            <span class="docBy">ديوان الداخلية</span>
+                        </li>
+                        <li class="resultItem">
+                            <img class="searchThumb" src="assets/img/thumb-100x150/doc1.jpg">
+                            <h6 clas="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h6>
+                            <span class="docBy">ديوان الداخلية</span>
+                        </li>
+                        <li class="resultItem">
+                            <img class="searchThumb" src="assets/img/thumb-100x150/doc1.jpg">
+                            <h6 clas="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h6>
+                            <span class="docBy">ديوان الداخلية</span>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <button id="button" class="button submit" type="button"><a href="search.html">عرض نتائج البحث</a></button>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+    <header>
+    <div class="col12 container clearfix">
+        <div class="logo">
+            <a href="index.html"><img src="assets/img/logo-arch.png"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="browse.html">تصفح</a></li>
+                <li><a href="#" class="about">المشروع</a></li>
+                <li><a href="#" class="login">تسجيل</a></li>
+                <li id="search" class="search"><a href="#search"><i class="fa fa-search"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <div id="main">
+        <div class="wrapper"> 
+            <div class="content col12 container clearfix">
+                <div class="contentWide">
+                    <div id="singleDoc">
+                <div class="right col6">
+                    <div class="view">
+                        <object data="assets/file/test.pdf" type="application/pdf" width="100%" height="100%"></object>
+                    </div>
+                    <div class="control"></div>
+                </div>
+                <div class="left col6">
+                    <h1>صورة القرار المعطى من الأمة المصرية بديوان الداخلية</h1>
+                    <div id="docTabs">
+                        <ul>
+                            <li><a href="#text">نسخة نصية</a></li>
+                            <li><a href="#moreInfo">معلومات اضافية</a></li>
+                            <li><a href="#share">شارك</a></li>
+                            <li class="collect"><a onclick="window.external.AddFavorite(location.href, document.title);" name="bookmark">أضف لمجموعتك</a></li>
+                        </ul>
+                        <div id="text">
+                            <div class="tabContent">
+                                <div class="pageBlock"><span>بداية صفحة 1</span></div>
+                                <p>بعد تلاوة الأوامر الصادرة من الخديو أولاً وأخراً وفيها الأمر الصادر بعزل أحمد عرابي باشا وتلاوة منشورات عرابي باشا وبعد سماعنا ما عرضه وكيلي بصفة هذه الوظيفة وكونه ريس المجلس المشكل لادارة اشغال الحكومة على المجلس وهو هل وجود الخديو في سكندرية هو ونظارة تحت محافظة عساكر الانكليز يقتضي عدم تنفيذ أوامره أم لا واذا صدرت اوامر من الخديو هل يعمل بها أم لا رأينا أن وجود العساكر في سكندرية والمراكب الانكليزية في السواحل المصرية ووقوف عرابي باشا في مدافعة العدو يقتضي وجوب بقأ الباشا المشار اليه في نظارة الجهادية  على قيادة العساكر ومتبعاً في اوامره المتعلقة بالعسكرية وعدم انفصاله من تلك الوظيفة ورأينا وجوب توقيف اوامر الخديو وما يصدر من نظاره الموجودين معه في سكندرية كاينة ما كانت لدى جهة من الجهات وعدم تنفيذها حيث ان الخديو خرج عن قواعد الشرع الشريف والقانون المنيف ويلزم عرض قرارنا هذا على العتاب العلية الشاهانية بواسطة وكلا النظارات تحريرا</p>
+                                <div class="pageBlock"><span>نهاية صفحة 1</span></div>
+                                <div class="pageBlock"><span>بداية صفحة 2</span></div>
+                                <p>بعد تلاوة الأوامر الصادرة من الخديو أولاً وأخراً وفيها الأمر الصادر بعزل أحمد عرابي باشا وتلاوة منشورات عرابي باشا وبعد سماعنا ما عرضه وكيلي بصفة هذه الوظيفة وكونه ريس المجلس المشكل لادارة اشغال الحكومة على المجلس وهو هل وجود الخديو في سكندرية هو ونظارة تحت محافظة عساكر الانكليز يقتضي عدم تنفيذ أوامره أم لا واذا صدرت اوامر من الخديو هل يعمل بها أم لا رأينا أن وجود العساكر في سكندرية والمراكب الانكليزية في السواحل المصرية ووقوف عرابي باشا في مدافعة العدو يقتضي وجوب بقأ الباشا المشار اليه في نظارة الجهادية  على قيادة العساكر ومتبعاً في اوامره المتعلقة بالعسكرية وعدم انفصاله من تلك الوظيفة ورأينا وجوب توقيف اوامر الخديو وما يصدر من نظاره الموجودين معه في سكندرية كاينة ما كانت لدى جهة من الجهات وعدم تنفيذها حيث ان الخديو خرج عن قواعد الشرع الشريف والقانون المنيف ويلزم عرض قرارنا هذا على العتاب العلية الشاهانية بواسطة وكلا النظارات تحريرا</p>
+                            <div class="pageBlock"><span>نهاية صفحة 21</span></div>
+                            </div>
+                        </div>
+                        <div id="moreInfo">
+                            <div class="tabContent">
+                                <div class="docView spacing"><span>مشاهدة: </span>1</div>
+                                <div class="docDate spacing"><span>تاريخ الوثيقة: </span>12 رمضان 1299 - 12 نوفمبر 1881</div>
+                                <div class="docIssue spacing"><span>جهة الاصدار: </span><a href="">ديوان الداخلية</a></div>
+                                <div class="docInfo spacing"><p>كانت هذه الوثيقة بعد أن تم عزل أحمد عرابي باشا عن منصبه بسبب تحالفه كانت هذه الوثيقة بعد أن تم عزل أحمد عرابي باشا عن منصبه بسبب تحالفه كانت هذه الوثيقة بعد أن تم عزل أحمد عرابي باشا عن منصبه بسبب تحالفه كانت هذه الوثيقة بعد أن تم عزل أحمد عرابي باشا عن منصبه بسبب تحالفه </p></div>
+                                <div class="keywords spacing"><span>كلمات دلالية: </span><a href="#">قرار</a>، <a href="#">عريضة</a></div>
+                                <ul class="docBtn spacing">
+                                    <li><a href="#"><i class="fa fa-download"></i>تحميل الوثيقة</a></li>
+                                     <li><a href="javascript:printText('text')"><i class="fa fa-file-text"></i>طباعة النسخة النصية</a></li>
+                                     <li><a href="#"><i class="fa fa-flag"></i>ابلاغ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="share">
+                            <div class="tabContent">
+                            <ul class="socialIcon">
+                                <li><a href="https://www.facebook.com/sharer/sharer.php"><button class="btnFb"><i class="fa fa-facebook"></i></button></a></li>
+                                <li><a href="https://twitter.com/intent/tweet?source="><button class="btnTw"><i class="fa fa-twitter"></i></button></a></li>
+                                <li><a href="https://plus.google.com/share?url="><button class="btnGp"><i class="fa fa-google"></i></button></a></li>
+                                <li><a href="http://www.linkedin.com/shareArticle?mini=true&url="><button class="btnLi"><i class="fa fa-linkedin"></i></button></a></li> 
+                                <li><a href="http://www.tumblr.com/share?v=3&u="><button class="btnTum"><i class="fa fa-tumblr"></i></button></a></li>
+                                <li><a href="http://pinterest.com/pin/create/button/?url="><button class="btnPin"><i class="fa fa-pinterest"></i></button></a></li>
+                                <li><a href="mailto:?subject=Egypt%20Archive&body="><button class="btnEm"><i class="fa fa-envelope"></i></button></a></li>
+                            </ul>
+                            <div class="docLink spacing">
+                                <h5 class="subtitle">رابط الوثيقة</h5>
+                                <form>
+                                <input type="text" id="copyCode" class="js-link readonly">
+                                <button onClick="ClipBoard();"><i class="fa fa-files-o"></i></button>
+                                </form>
+                            </div>
+                            <div class="docEmbed spacing">
+                                <h5 class="subtitle">تضمين الوثيقة</h5>
+                                <div class="embed spacing">
+                                <span class="embedTitle">الحجم</span>
+                                <span class="embedDim">
+                                    <ul class="embedSizes">
+                                        <li>
+                                            <div class="label">تلقائي</div>
+                                            <div class="size auto"></div>
+                                        </li>
+                                        <li>
+                                            <div class="label">600x800</div>
+                                            <div class="size mid"></div>
+                                        </li>
+                                        <li>
+                                            <div class="label">400x600</div>
+                                            <div class="size small"></div>
+                                        </li>
+                                    </ul>
+                                </span>
+                                </div>
+                                <div class="embed spacing">
+                                <span class="embedTitle">انسخ الكود التالي في موقعك</span>
+                                <form>
+                                <textarea rows="5" id="copyCode" class="js-link webCode"></textarea>
+                                <button onClick="ClipBoard();"><i class="fa fa-files-o"></i></button>
+                                </form>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+        <div class="subWrap">
+            <div class="content col12 container clearfix">
+                <div class="contentWide">
+                    <div id="relatedDoc">
+                        <div class="sectionInfo clearfix">
+                            <div class="title">
+                                <h2><span>وثائق متعلقة</span></h2>
+                            </div>
+                        </div>
+                        <div class="grid clearfix">
+                                <div class="small">
+                                    <a href="single.html" class="wrap">
+                                        <div class="image"><img src="assets/img/thumb-160x220/doc01.jpg"></div>
+                                        <div class="info">
+                                            <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                            <span class="docBy">ديوان الداخلية</span>
+                                        </div>
+                                    </a>
+</div>
+                                <div class="small">
+                                    <a href="single.html" class="wrap">
+                                        <div class="image"><img src="assets/img/thumb-160x220/doc02.jpg"></div>
+                                        <div class="info">
+                                            <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                            <span class="docBy">ديوان الداخلية</span>
+                                        </div>
+                                    </a>
+</div>
+                                <div class="small">
+                                    <a href="single.html" class="wrap">
+                                        <div class="image"><img src="assets/img/thumb-160x220/doc03.jpg"></div>
+                                        <div class="info">
+                                            <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                            <span class="docBy">ديوان الداخلية</span>
+                                        </div>
+                                    </a>
+</div>
+                                <div class="small">
+                                    <a href="single.html" class="wrap">
+                                        <div class="image"><img src="assets/img/thumb-160x220/doc04.jpg"></div>
+                                        <div class="info">
+                                            <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                            <span class="docBy">ديوان الداخلية</span>
+                                        </div>
+                                    </a>
+</div>
+                                <div class="small">
+                                    <a href="single.html" class="wrap">
+                                        <div class="image"><img src="assets/img/thumb-160x220/doc01.jpg"></div>
+                                        <div class="info">
+                                            <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                            <span class="docBy">ديوان الداخلية</span>
+                                        </div>
+                                    </a>
+</div>
+                                <div class="small">
+                                    <a href="single.html" class="wrap">
+                                        <div class="image"><img src="assets/img/thumb-160x220/doc02.jpg"></div>
+                                        <div class="info">
+                                            <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                            <span class="docBy">ديوان الداخلية</span>
+                                        </div>
+                                    </a>
+</div>
+                                <div class="small">
+                                    <a href="single.html" class="wrap">
+                                        <div class="image"><img src="assets/img/thumb-160x220/doc03.jpg"></div>
+                                        <div class="info">
+                                            <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                            <span class="docBy">ديوان الداخلية</span>
+                                        </div>
+                                    </a>
+</div>
+                                <div class="small">
+                                    <a href="single.html" class="wrap">
+                                        <div class="image"><img src="assets/img/thumb-160x220/doc04.jpg"></div>
+                                        <div class="info">
+                                            <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                            <span class="docBy">ديوان الداخلية</span>
+                                        </div>
+                                    </a>
+</div>
+                                <div class="small">
+                                    <a href="single.html" class="wrap">
+                                        <div class="image"><img src="assets/img/thumb-160x220/doc04.jpg"></div>
+                                        <div class="info">
+                                            <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                            <span class="docBy">ديوان الداخلية</span>
+                                        </div>
+                                    </a>
+</div> 
+                                <div class="small">
+                                    <a href="single.html" class="wrap">
+                                        <div class="image"><img src="assets/img/thumb-160x220/doc04.jpg"></div>
+                                        <div class="info">
+                                            <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                            <span class="docBy">ديوان الداخلية</span>
+                                        </div>
+                                    </a>
+</div> 
+                                <div class="small">
+                                    <a href="single.html" class="wrap">
+                                        <div class="image"><img src="assets/img/thumb-160x220/doc04.jpg"></div>
+                                        <div class="info">
+                                            <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                            <span class="docBy">ديوان الداخلية</span>
+                                        </div>
+                                    </a>
+</div>
+                                <div class="small">
+                                    <a href="single.html" class="wrap">
+                                        <div class="image"><img src="assets/img/thumb-160x220/doc04.jpg"></div>
+                                        <div class="info">
+                                            <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                            <span class="docBy">ديوان الداخلية</span>
+                                        </div>
+                                    </a>
+</div> 
+                        </div> 
+                        <div class="loadMore">
+                        <div class="spinner"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div>
+                <div id="moreDoc">حمل المزيد</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <footer>
+        <div class="col4 container">
+            <div class="logo">
+                <a href="#page"><img src="assets/img/logo-arch.png"></a>
+            </div>
+            <ul class="mainNav">
+                <li><a href="#" class="about">عن المشروع</a></li>
+                <li><a href="browse.html">الوثائق</a></li>
+                <li><a href="#" class="login">تسجيل الدخول</a></li>
+            </ul>
+            <ul class="secNav">
+                <li><a href="about.html">شروط الاستخدام</a></li>
+                <li><a href="about.html">سياسة الخصوصية</a></li>
+                <li><a href="about.html">مساعدة</a></li>
+                <li><a href="blog.html">المدونة</a></li>
+            </ul>
+            <div class="newsletter">
+                <form>
+                    <input type="email" placeholder="البريد الإلكتروني" class="formEmail">
+                    <input type="submit" value="انضم" class="button submit">
+                </form>
+            </div>
+            <p class="project">أحد مشروعات برنامج حرية تداول المعلومات <a href="http://sitcegypt.org">مركز دعم تقنية المعلومات</a></p>
+            <p class="creativecommon">هذا المُصنَّف مرخص بموجب رخصة المشاع الإبداعي نَسب المُصنَّف 4.0 دولي.</p>
+            <p class="devs">تطوير وتصميم الموقع بواسطة<br> 
+                <a href="http://huridocs.org"><img src="assets/img/huridocs-logo.png"></a>
+                <a href="http://sitcegypt.org"><img src="assets/img/sitc-logo.png"></a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

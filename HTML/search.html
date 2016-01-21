@@ -1,0 +1,420 @@
+<html !DOCTYPE lang="ar">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <title>أرشيف مصر | المعرفة سلطة</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/droidarabickufi.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <script src="assets/js/script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+</head>
+<body id="search">
+    <div class="overlay pageAbout" style="display:none">
+        <div class="aboutOpen">
+            <i class="fa fa-close"></i>
+            <div class="article col6">
+                <div class="header">
+                    <div class="logo"><img src="assets/img/logo-arch.png"></div>
+                </div>
+                <div class="body">
+                    <p>يمارس الأرشيف الوطني دوره الفعال والنشط في إدارة وتجميع سجلات ومحفوظات الأجهزة الحكومية وترويج استخدامها فيما بين الجامعات، والأجهزة التعليمية، ومعاهد البحوث، وفيما بين جمهور المستفيدين.
+</p>
+                    <p>تُشكل الأرشيفات الوطنية أو مراكز الوثائق الوطنية جزءاً من ثلاث مؤسسات متداخلة هي: المكتبة الوطنية، والمتحف الوطني، والأرشيف الوطني، ولكل منها طابع فردي مميز لها وبرامج مختلفة للخدمة، إلا أن الأرشيف الوطني يتميز بارتباطه بالأجهزة الحكومية، والجامعات والمؤسسات التعليمية، وأجهزة البحث والصناعة،وكذلك الأفراد. وبين كل تلك المؤسسات.</p>
+                    <p>تُشكل الأرشيفات الوطنية أو مراكز الوثائق الوطنية جزءاً من ثلاث مؤسسات متداخلة هي: المكتبة الوطنية، والمتحف الوطني، والأرشيف الوطني، ولكل منها طابع فردي مميز لها وبرامج مختلفة للخدمة، إلا أن الأرشيف الوطني يتميز بارتباطه بالأجهزة الحكومية، والجامعات والمؤسسات التعليمية، وأجهزة البحث والصناعة،وكذلك الأفراد. وبين كل تلك المؤسسات.</p>
+                    <p>للمزيد من الاستفسارات عن الوثائق يمكنكم تصفح <a href="help.html">المساعدة</a>. كما يمكنكم <a href="login.html">تسجيل الدخول</a>. وللتعرف على <a href="use.html">شروط الاستخدام</a> و<a href="use.html">سياسة الخصوصية</a>.</p>
+                </div>
+                <div class="footer">
+                    <p>أرشيف مصر هو أحد مشروعات برنامج حرية تداول المعلومات <a href="sitcegypt.org">مركز دعم لتقنية المعلومات</a></p>
+                    <p>تصميم الموقع وتطويره تم من خلال <a href="http://sitcegypt.org">مركز دعم لتقنية المعلومات</a> و<a href="http://huridocs.org">هوريدكس</a></p>
+                    <ul class="social">
+                        <li><a href="https://fb.com/sitcegypt.org"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/sitcegypt.org"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                    <div class="creativecommon">هذا المُصنَّف مرخص بموجب رخصة المشاع الإبداعي نَسب المُصنَّف 4.0 دولي.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay pageSign" style="display:none">
+        <div class="signOpen">
+            <i class="fa fa-close"></i>
+            <div class="article col4">
+                <div class="header">
+                    <div class="logo"><img src="assets/img/logo-arch.png"></div>
+                    <h1>مرحباً</h1>
+                    <h4>مزيد من الإعدادات لتنظيم الأرشيف الخاص بك</h4>
+                </div>
+                <div class="body">
+                    <div class="login">
+                        <div class="sociaLogin clearfix">
+                            <h5 class="lines"><span>تسجيل الدخول من خلال</span></h5>
+                            <ul class="socLogin">
+                                <li><button class="btnFb"><i class="fa fa-facebook"></i></button></li>
+                                <li><button class="btnTw"><i class="fa fa-twitter"></i></button></li>
+                                <li><button class="btnGp"><i class="fa fa-google-plus"></i></button></li>
+                                <li><button class="btnLi"><i class="fa fa-linkedin"></i></button></li>
+                            </ul>
+                        </div>
+                        <div class="form">
+                            <h5 class="lines"><span>أو</span></h5>
+                            <form id="formLogin">
+                                <div class="formGrp">
+                                    <input id="username" class="formInput" name="username" type="text" placeholder="البريد الإلكتروني أو اسم المستخدم" title="ادخال بريد الكتروني مسجل أو اسم مستخدم">
+                                </div>
+                                <div class="formGrp">
+                                    <input id="pwd" class="formInput" name="password" type="password" placeholder="كلمة المرور" title="ادخال كلمة مرور مكون على الأقل من أربعة أحرف">
+                                </div>
+                                <div class="formGrp formInfo">
+                                    <label class="remember"><input type="checkbox"> تذكرني</label>
+                                    <a id="forgotPwd" class="pwdForgot">نسيت كلمة المرور؟</a> 
+                                </div>
+                                <button id="button" class="button submit" type="submit">تسجيل الدخول</button>       
+                            </form>
+                        </div>
+                    </div>
+                    <div class="signup">
+                        <h4>لانشاء حساب جديد</h4>
+                        <form id="formSignup">
+                            <div class="formGrp">
+                                <input id="name" class="formInput" name="name" type="text" placeholder="الاسم بالكامل" title="الاسم بالكامل لا يقل عن 4 أحرف">
+                            </div>
+                            <div class="formGrp">
+                                <input id="email" class="formInput" name="email" type="email" placeholder="البريد الإلكتروني" title="ادخال بريد الكتروني صحيح">
+                            </div>
+                            <div class="formGrp">
+                                    <input id="pwd" class="formInput" name="password" type="password" placeholder="كلمة المرور" title="ادخال كلمة مرور مكون على الأقل من أربعة أحرف">
+                            </div>
+                            <div class="formInfo">
+                            <p>بانضمامك للموقع، فإنك توافق على <a href="use.html">شروط الاستخدام وسياسة الخصوصية</a></p>
+                            </div>
+                            <button id="button" class="button submit" type="submit">انضم الآن</button>         
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+    <div class="col12 container clearfix">
+        <div class="logo">
+            <a href="index.html"><img src="assets/img/logo-arch.png"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="browse.html">تصفح</a></li>
+                <li><a href="about.html">المشروع</a></li>
+                <li><a href="login.html">تسجيل</a></li>
+                <li id="search" class="search"><a href="#search"><i class="fa fa-search"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <div id="main">
+        <div class="wrapper"> 
+            <div class="content col12 container clearfix">
+        
+                <div class="left col8">
+                    <div class="allDocs searchFilter">
+                        <div class="sectionInfo clearfix">
+                            <div class="title">
+                                <h2>البحث عن '<span class="color">ديوان</span>'</h2>
+                            </div>
+                            <div class="controls">
+                                <p>ترتيب العرض بواسطة</p>
+                                <label><select>
+                                    <option selected>اختر طريقة العرض</option>
+                                    <option>الترتيب الأبجدي</option>
+                                    <option>تاريخ الاصدار</option>
+                                </select></label>
+                            </div>
+                        </div>
+                         <div class="grid clearfix">
+                            <div class="row">
+                             <div class="big">
+                                <a href="single.html" class="wrap">
+                                    <div class="image"><img src="assets/img/thumb-340x460/doc01.jpg"></div>
+                                    <div class="info">
+                                        <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                        <span class="docBy">ديوان الداخلية</span>
+                                    </div>
+                                </a>
+                            </div>
+                             <div class="small">
+                                <a href="single.html" class="wrap">
+                                    <div class="image"><img src="assets/img/thumb-160x220/doc01.jpg"></div>
+                                    <div class="info">
+                                        <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                        <span class="docBy">ديوان الداخلية</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="small">
+                                <a href="single.html" class="wrap">
+                                    <div class="image"><img src="assets/img/thumb-160x220/doc02.jpg"></div>
+                                    <div class="info">
+                                        <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                        <span class="docBy">ديوان الداخلية</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="small">
+                                <a href="single.html" class="wrap">
+                                    <div class="image"><img src="assets/img/thumb-160x220/doc03.jpg"></div>
+                                    <div class="info">
+                                        <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                        <span class="docBy">ديوان الداخلية</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="small">
+                                <a href="single.html" class="wrap">
+                                    <div class="image"><img src="assets/img/thumb-160x220/doc04.jpg"></div>
+                                    <div class="info">
+                                        <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                        <span class="docBy">ديوان الداخلية</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small">
+                                <a href="single.html" class="wrap">
+                                    <div class="image"><img src="assets/img/thumb-160x220/doc01.jpg"></div>
+                                    <div class="info">
+                                        <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                        <span class="docBy">ديوان الداخلية</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="small">
+                                <a href="single.html" class="wrap">
+                                    <div class="image"><img src="assets/img/thumb-160x220/doc02.jpg"></div>
+                                    <div class="info">
+                                        <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                        <span class="docBy">ديوان الداخلية</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="small">
+                                <a href="single.html" class="wrap">
+                                    <div class="image"><img src="assets/img/thumb-160x220/doc03.jpg"></div>
+                                    <div class="info">
+                                        <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                        <span class="docBy">ديوان الداخلية</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="small">
+                                <a href="single.html" class="wrap">
+                                    <div class="image"><img src="assets/img/thumb-160x220/doc04.jpg"></div>
+                                    <div class="info">
+                                        <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                        <span class="docBy">ديوان الداخلية</span>
+                                    </div>
+                                </a>
+                            </div> 
+                        </div>
+                             <div class="row">
+                             <div class="big">
+                                <a href="single.html" class="wrap">
+                                    <div class="image"><img src="assets/img/thumb-340x460/doc01.jpg"></div>
+                                    <div class="info">
+                                        <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                        <span class="docBy">ديوان الداخلية</span>
+                                    </div>
+                                </a>
+                            </div>
+                             <div class="small">
+                                <a href="single.html" class="wrap">
+                                    <div class="image"><img src="assets/img/thumb-160x220/doc01.jpg"></div>
+                                    <div class="info">
+                                        <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                        <span class="docBy">ديوان الداخلية</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="small">
+                                <a href="single.html" class="wrap">
+                                    <div class="image"><img src="assets/img/thumb-160x220/doc02.jpg"></div>
+                                    <div class="info">
+                                        <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                        <span class="docBy">ديوان الداخلية</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="small">
+                                <a href="single.html" class="wrap">
+                                    <div class="image"><img src="assets/img/thumb-160x220/doc03.jpg"></div>
+                                    <div class="info">
+                                        <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                        <span class="docBy">ديوان الداخلية</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="small">
+                                <a href="single.html" class="wrap">
+                                    <div class="image"><img src="assets/img/thumb-160x220/doc04.jpg"></div>
+                                    <div class="info">
+                                        <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                        <span class="docBy">ديوان الداخلية</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small">
+                                <a href="single.html" class="wrap">
+                                    <div class="image"><img src="assets/img/thumb-160x220/doc01.jpg"></div>
+                                    <div class="info">
+                                        <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                        <span class="docBy">ديوان الداخلية</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="small">
+                                <a href="single.html" class="wrap">
+                                    <div class="image"><img src="assets/img/thumb-160x220/doc02.jpg"></div>
+                                    <div class="info">
+                                        <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                        <span class="docBy">ديوان الداخلية</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="small">
+                                <a href="single.html" class="wrap">
+                                    <div class="image"><img src="assets/img/thumb-160x220/doc03.jpg"></div>
+                                    <div class="info">
+                                        <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                        <span class="docBy">ديوان الداخلية</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="small">
+                                <a href="single.html" class="wrap">
+                                    <div class="image"><img src="assets/img/thumb-160x220/doc04.jpg"></div>
+                                    <div class="info">
+                                        <h5 class="docTitle">صورة قرار من الأمة المصرية بديوان الداخلية</h5>
+                                        <span class="docBy">ديوان الداخلية</span>
+                                    </div>
+                                </a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="loadMore">
+                        <div class="spinner"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div>
+                        <div id="moreDoc">حمل المزيد</div>
+                    </div>
+    </div>
+                </div>
+
+                <div class="sidebar filters col3">
+                <div id="search" class="filter">
+                    <label for="filterby"><i class="fa fa-search"></i></label>
+                    <input placeholder="بحث عن الوثائق" id="filterby" class="formSearch">
+                </div>
+                <div class="facets">
+                    <div class="facetTop">
+                        <h5 class="facetTitle">فلتَرَة البحث</h5>
+                        <span class="clear"><i class="fa fa-close"></i>تصفية</span>
+                    </div>
+                    <div class="facet released">
+                        <div class="facetWrap">
+                            <h6>جهة الاصدار</h6>
+                            <div class="itemsWrap">
+                                <div class="facetItem">
+                                    <input type="checkbox">
+                                    <label class="option">ديوان الداخلية</label>
+                                    <span class="itemCount">25</span>
+                                </div>
+                                <div class="facetItem">
+                                    <input type="checkbox">
+                                    <label class="option">وزارة العدل</label>
+                                    <span class="itemCount">3</span>
+                                </div>
+                                <div class="facetItem">
+                                    <input type="checkbox">
+                                    <label class="option">مصلحة الهجرة</label>
+                                    <span class="itemCount">70</span>
+                                </div>
+                                <div class="facetItem">
+                                    <input type="checkbox">
+                                    <label class="option">وزارة الاتصالات والمعلومات</label>
+                                    <span class="itemCount">2</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="facet daterange">
+                        <div class="facetWrap">
+                            <h6>الفترة الزمنية</h6>
+                            <div class="itemsWrap">
+                                <div class="facetItem">
+                                    <input type="date" placeholder="من">
+                                </div>
+                                <div class="facetItem">
+                                    <input type="date" placeholder="من">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="facet keywords">
+                        <div class="facetWrap">
+                            <h6>الكلمات الدلالية</h6>
+                            <div class="itemsWrap">
+                                <div class="facetItem">
+                                    <button class="button kwbtn">عقد قران</button>                            
+                                </div>
+                                <div class="facetItem">
+                                    <button class="button kwbtn">قرارات</button>                            
+                                </div>
+                                <div class="facetItem">
+                                    <button class="button kwbtn">عقود</button>                            
+                                </div>
+                                <div class="facetItem">
+                                    <button class="button kwbtn">عقود</button>                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            </div>
+        </div>
+    </div>
+   <footer>
+        <div class="col4 container">
+            <div class="logo">
+                <a href="#page"><img src="assets/img/logo-arch.png"></a>
+            </div>
+            <ul class="mainNav">
+                <li><a href="#" class="about">عن المشروع</a></li>
+                <li><a href="browse.html">الوثائق</a></li>
+                <li><a href="#" class="login">تسجيل الدخول</a></li>
+            </ul>
+            <ul class="secNav">
+                <li><a href="about.html">شروط الاستخدام</a></li>
+                <li><a href="about.html">سياسة الخصوصية</a></li>
+                <li><a href="about.html">مساعدة</a></li>
+                <li><a href="blog.html">المدونة</a></li>
+            </ul>
+            <div class="newsletter">
+                <form>
+                    <input type="email" placeholder="البريد الإلكتروني" class="formEmail">
+                    <input type="submit" value="انضم" class="button submit">
+                </form>
+            </div>
+            <p class="project">أحد مشروعات برنامج حرية تداول المعلومات <a href="http://sitcegypt.org">مركز دعم تقنية المعلومات</a></p>
+            <p class="creativecommon">هذا المُصنَّف مرخص بموجب رخصة المشاع الإبداعي نَسب المُصنَّف 4.0 دولي.</p>
+            <p class="devs">تطوير وتصميم الموقع بواسطة<br> 
+                <a href="http://huridocs.org"><img src="assets/img/huridocs-logo.png"></a>
+                <a href="http://sitcegypt.org"><img src="assets/img/sitc-logo.png"></a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
