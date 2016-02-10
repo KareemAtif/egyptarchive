@@ -1,0 +1,21 @@
+/*
+Description: RESET.CSS
+Version: 1.0b
+Author: Kareem Atif
+Author URI: http://kareematif.me
+Email: Kareematif@gmail.com | Twitter: @kareematif
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+---------------------------------------------------*/
+html,body, ul, form, h1,h2,h3,h4,h5,h6,input{margin:0;padding:0}
+h1,h2,h3,h4,h5,h6 {margin:0}
+a {text-decoration: none;}
+ol{list-style-type: disc}
+.ui-widget *, input,select,option {outline: none;}
+input,button,textarea, select{background:none;border:none;-moz-appearance:textfield;}
+li {list-style-type: none;}
+input::-webkit-outer-spin-button {-webkit-appearance: none;}
+input::-webkit-inner-spin-button {-webkit-appearance: none;}
+textarea {resize: vertical;}
+
+.clearfix:after {display:table;content:"";clear:both;}

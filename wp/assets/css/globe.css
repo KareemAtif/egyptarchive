@@ -1,0 +1,82 @@
+/*
+Description: Globe.CSS
+Version: 0.5b
+Author: Kareem Atif
+Author URI: http://kareematif.me
+Email: Kareematif@gmail.com | Twitter: @kareematif
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+---------------------------------------------------
+
+BODY
+---------------------*/
+body {font-family:'Droid Arabic Kufi', sans-serif;direction:rtl}
+a {transition:all 0.2s linear}
+h1 {font-size:32px}
+h2 {font-size:26px}
+h3 {font-size:21px}
+h4 {font-size:18px}
+h5 {font-size:16px}
+h6 {font-size:14px}
+p {font-size:14px;margin:1.2em 0}
+.col12 {width:1120px;padding:10px;}
+.col11 {width:1025px}
+.col10 {width:930px}
+.col9 {width:835px}
+.col8 {width:740px}
+.col7 {width:645px}
+.col6 {width:550px}
+.col5 {width:455px}
+.col4 {width:360px}
+.col3 {width:265px}
+.col2 {width:170px}
+.col1 {width:75px}
+.centered {margin:0 auto}
+
+/* Collected
+---------------------*/
+/* MARGIN */
+
+/* POSITION */
+header,footer,header li a {position:relative}
+header li a:after, header .logo, footer .logo {position:absolute}
+/* FLOAT */
+header ul {float:left}
+/* DISPLAY */
+header li a:after {display:block}
+header li,footer li ,footer .credits a {display:inline-block}
+ /* TEXT */
+footer {text-align: center}
+ /* FONT-WEIGHT */
+footer .main-menu, footer .credits p:last-of-type {font-weight:bold}
+ /* COLOR */
+header li a {color:#fff}
+footer, footer a{color:#b7b7b7}
+footer p:first-of-type a {color:#60a0e0}
+header li a:hover, footer a:hover {color:#203040}
+ /* VERTICAL-ALIGN */
+footer .credits a, footer .credits span {vertical-align: middle;}
+
+/* HEADER
+---------------------*/
+header {background:#60a0e0}
+header .logo {top:35%}
+header ul {height:100px;line-height:100px}
+header li {margin-right:2.8em}
+header li a:after {left:0;bottom:-5px;width:0;height:3px;background:#203040;content:"";-webkit-transition: all 0.4s;-moz-transition: all 0.4s;-o-transition: all 0.4s;transition: all 0.4s;}
+header li a:hover:after {width:100%}
+/* FOOTER
+---------------------*/
+footer {border-top:1px solid #ebebeb;margin-top:80px;font-size:0.8em;padding-top:40px;}
+footer .logo {top:-45px;right:0;left:0}
+footer img {width:90px;filter:gray;-webkit-filter:grayscale(100%);filter:grayscale(100%);transition:all linear 0.4s}
+footer img:hover {filter:none;-webkit-filter:grayscale(0%)}
+ {font-weight:bold}
+footer li {margin:0 10px}
+footer .main-menu {margin:1em 0}
+footer .credits p {font-size:0.75em}
+footer .credits p:first-of-type {font-size:0.9em}
+footer .credits img {height:28px;width:auto}
+footer .credits span {margin:0 10px;font-size:1.8em}
+footer .credits i {font-size:2.6em}
+footer .credits br:after {margin-bottom:1em}
