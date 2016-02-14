@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); echo '?' . filemtime(get_stylesheet_directory() . '/style.css'); ?>" type="text/css" media="all" />
   <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
   <header>
     <div class="col12 centered clearfix">
       <div class="logo">
@@ -32,4 +32,3 @@
     </div>
   </header>
   <main>
-    
