@@ -15,6 +15,7 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php if(!is_404()): ?>
   <header>
     <div class="col12 centered clearfix">
       <div class="logo">
@@ -31,4 +32,5 @@
       <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => 'menu-row')); ?>
     </div>
   </header>
+<?php endif; ?>
   <main>

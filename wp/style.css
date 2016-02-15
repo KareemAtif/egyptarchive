@@ -32,6 +32,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 /* CSS
 ---------------------*/
-@import url(assets/css/reset.css);
-@import url(assets/css/globe.css);
+@import url(assets/css/reset.css?ver=0.5);
+@import url(assets/css/globe.css?ver=0.5);
 @import url(assets/css/media.css);

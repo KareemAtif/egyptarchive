@@ -19,6 +19,9 @@ h4 {font-size:18px}
 h5 {font-size:16px}
 h6 {font-size:14px}
 p {font-size:14px;margin:1.2em 0}
+
+/* GENERAL
+---------------------*/
 .col12 {width:1120px;padding:10px;}
 .col11 {width:1025px}
 .col10 {width:930px}
@@ -32,6 +35,13 @@ p {font-size:14px;margin:1.2em 0}
 .col2 {width:170px}
 .col1 {width:75px}
 .centered {margin:0 auto}
+.text-center {text-align:center}
+.lines {border-bottom-style:solid;height:0.5em;line-height:1}
+.lines span {background:#60a0e0;padding:0 0.2em}
+h1.lines{font-size:6em;border-width:3px;border-color:#fff}
+h5.lines{border-width:1px;border-color:#01c0a1;color:#01c0a1}
+article {margin:3.6em 0}
+
 
 /* Collected
 ---------------------*/
@@ -46,11 +56,11 @@ header ul {float:left}
 header li a:after {display:block}
 header li,footer li ,footer .credits a {display:inline-block}
  /* TEXT */
-footer {text-align: center}
+
  /* FONT-WEIGHT */
 footer .main-menu, footer .credits p:last-of-type {font-weight:bold}
  /* COLOR */
-header li a {color:#fff}
+header li a,.error404 article {color:#fff}
 footer, footer a{color:#b7b7b7}
 footer p:first-of-type a {color:#60a0e0}
 header li a:hover, footer a:hover {color:#203040}
@@ -65,6 +75,12 @@ header ul {height:100px;line-height:100px}
 header li {margin-right:2.8em}
 header li a:after {left:0;bottom:-5px;width:0;height:3px;background:#203040;content:"";-webkit-transition: all 0.4s;-moz-transition: all 0.4s;-o-transition: all 0.4s;transition: all 0.4s;}
 header li a:hover:after {width:100%}
+
+/* 404
+---------------------*/
+body.error404 {background:#60a0e0 url('../img/bg-404.png') repeat-x center bottom;background-size:contain;}
+
+
 /* FOOTER
 ---------------------*/
 footer {border-top:1px solid #ebebeb;margin-top:80px;font-size:0.8em;padding-top:40px;}

@@ -7,8 +7,13 @@ Email: Kareematif@gmail.com | Twitter: @kareematif
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 ---------------------------------------------------*/
-html,body, ul, form, h1,h2,h3,h4,h5,h6,input{margin:0;padding:0}
-h1,h2,h3,h4,h5,h6 {margin:0}
+html, body, ul, form, input{margin:0;padding:0}
+h1 {margin: 0.67em 0}
+h2 {margin: 0.55em 0}
+h3 {margin: 0.43em 0}
+h4 {margin: 0.31em 0}
+h5 {margin: 0.19em 0}
+h6 {margin:0}
 a {text-decoration: none;}
 ol{list-style-type: disc}
 .ui-widget *, input,select,option {outline: none;}

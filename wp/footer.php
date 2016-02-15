@@ -6,7 +6,8 @@
 **/
  ?>
 </main>
- <footer>
+<?php if(!is_404()): ?>
+ <footer class="text-center">
    <div class="col4 centered">
      <div class="logo">
        <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
@@ -21,6 +22,7 @@
      </div>
    </div>
  </footer>
+ <?php endif; ?>
  <?php wp_footer(); ?>
  </body>
  </html>
