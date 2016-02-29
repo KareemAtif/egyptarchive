@@ -32,8 +32,8 @@
       <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => 'menu-row')); ?>
     </div>
     <div id="search" class="overlay">
-      <div class="header">
-        <i class="fa fa-close"></i>
+      <div class="header col10 centered">
+        <i class="fa fa-close close"></i>
         <?php get_search_form(); ?>
       </div>
       <div class="body">

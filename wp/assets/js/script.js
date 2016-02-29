@@ -14,5 +14,19 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
 'use strict';
  (function($){
-   
+   $(document).ready(function(){
+     // Show/hide Search Form
+    $('li.search').click(function(){
+      $('#search.overlay').show(1000);
+      $('html').css('overflow', 'hidden');
+    });
+    function closeOverlay(){
+      $('.overlay').hide(1000);
+      $('html').removeAttr('style');
+    }
+    $('.overlay i.close').click(closeOverlay);
+    $(document).keydown(function(e){
+      if (e.keyCode == 27) closeOverlay(e);
+    });
+   });
  })(jQuery);

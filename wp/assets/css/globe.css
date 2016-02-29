@@ -45,9 +45,11 @@ article {margin:3.6em 0}
 article .header, article .body, article .footer {margin-bottom:1.6em}
 article em {color:#11B99C}
 
-
 /* Collected
 ---------------------*/
+/* BACKGROUND */
+.search-form input {background:transparent}
+.overlay {background:rgba(32, 48, 64, 0.95);}
 /* COLOR */
 header li a, .error404 article, header .search a:hover i, .search-form input {color:#fff}
 footer, footer a{color:#b7b7b7}
@@ -59,7 +61,7 @@ header img, footer img {max-width:100%}
 /* DISPLAY */
 header li a:after {display:block}
 header li, footer li, .logo a, .credits a {display:inline-block}
-.search a:after, footer .search {display:none}
+.overlay, .search a:after, footer .search {display:none}
 /* FLOAT */
 .featured .title {float:right}
 header ul, .featured .controls {float:left}
@@ -71,7 +73,8 @@ article em, footer .main-menu, footer .credits p:last-of-type {font-weight:bold}
 header, main {padding-right:2rem;padding-left:2rem}
 /* POSITION */
 header,footer,header li a,.search-form {position:relative}
-header li a:after, header .logo, footer .logo,.search-form i {position:absolute}
+header li a:after, header .logo, footer .logo,.search-form i, .overlay i {position:absolute}
+.overlay {position:fixed}
  /* TEXT */
  /* VERTICAL-ALIGN */
 .credits a, .credits span {vertical-align: middle;}
@@ -88,10 +91,14 @@ header .search a {background:#4573a1;padding:3px 10px;border-radius:50%;transiti
 header .search a:hover{background:#203040;border:none;}
 header .search i {color:#203040;font-size:18px!important;}
 
-/* SEARCH FORM
+/* OVERLAY
 ---------------------*/
+.overlay {top:0;right:0;bottom:0;left:0;z-index: 10;padding:4em 0}
+.overlay i {color:#ffd140;font-size:2em;left:3em;top:2em;cursor: pointer}
 .search-form input {border-bottom:2px solid #01c0a1; font-size: 3em;padding:10px 10px 10px 2em;width:100%;text-indent:25px}
 .search-form i {top:calc(50% - 50px);left:25px;font-size:5em;color:#16212b}
+
+
 /* MAIN
 ---------------------*/
 main {padding-top:6em}
