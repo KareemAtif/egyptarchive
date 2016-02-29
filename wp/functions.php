@@ -69,6 +69,23 @@ function search_menu($items, $args){
     return $items;
 }
 add_filter('wp_nav_menu_items', 'search_menu', 10, 2);
+// Add AJAX handler for search Form
+function ajax_search(){
+  if(!isset ($_POST['search']))
+    exit;
+  query_posts(
+    array(
+      'posts_per_page' => 4,
+      'no_found_rows' => true,
+      'post_type' => get_post_types(array('public' => true)),
+      's' => wp_unslash(string) $_post['search'] ),
+      )
+);
+get_template_part('temps/content', 'ajax-search');
+exit;
+}
+add_action('wp_ajax_nopriv_search', 'ajax_search', 100);
+add_action('wp_ajax_search', 'ajax_search', 100);
 // Theme Includes
   // Add Theme customizer
   require get_template_directory() . '/inc/customizer.php';

@@ -93,9 +93,9 @@ header .search i {color:#203040;font-size:18px!important;}
 
 /* OVERLAY
 ---------------------*/
-.overlay {top:0;right:0;bottom:0;left:0;z-index: 10;padding:4em 0}
-.overlay i {color:#ffd140;font-size:2em;left:3em;top:2em;cursor: pointer}
-.search-form input {border-bottom:2px solid #01c0a1; font-size: 3em;padding:10px 10px 10px 2em;width:100%;text-indent:25px}
+.overlay {top:0;right:0;bottom:0;left:0;z-index: 10;padding:4.5em 0}
+.overlay i {color:#ffd140;font-size:2em;left:5%;top:5%;cursor: pointer}
+.search-form input {border-bottom:2px solid #01c0a1; font-size: 2.8em;padding:10px 10px 10px 2em;width:100%;text-indent:25px}
 .search-form i {top:calc(50% - 50px);left:25px;font-size:5em;color:#16212b}
 
 
