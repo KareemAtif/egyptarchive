@@ -17,7 +17,7 @@
 <body <?php body_class(); ?>>
 <?php if(!is_404()): ?>
   <header>
-    <div class="col12 centered clearfix">
+    <div class="centered clearfix">
       <div class="logo">
         <?php if(get_theme_mod('arc_logo')): ?>
         <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
@@ -30,6 +30,15 @@
         <?php endif; ?>
       </div>
       <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => 'menu-row')); ?>
+    </div>
+    <div id="search" class="overlay">
+      <div class="header">
+        <i class="fa fa-close"></i>
+        <?php get_search_form(); ?>
+      </div>
+      <div class="body">
+
+      </div>
     </div>
   </header>
 <?php endif; ?>

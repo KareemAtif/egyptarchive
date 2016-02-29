@@ -29,6 +29,11 @@ if (!function_exists('arc_setup')){
   }
 }
 add_action('after_setup_theme', 'arc_setup');
+// Arabic Language Attribute
+function lang_attr() {
+  return 'lang="ar"';
+}
+add_filter('language_attributes' , 'lang_attr');
 // Register Widget
 function arc_widget() {
   register_sidebar( array(
@@ -57,6 +62,13 @@ function jquery_update(){
   }
 }
 add_action('init', 'jquery_update');
+// Add search to Primary Navigation
+function search_menu($items, $args){
+  if($args->theme_location == 'primary')
+    return $items.= '<li class="search"><a href="#search"><i class="fa fa-search"></i></a></li>';
+    return $items;
+}
+add_filter('wp_nav_menu_items', 'search_menu', 10, 2);
 // Theme Includes
   // Add Theme customizer
   require get_template_directory() . '/inc/customizer.php';
@@ -66,3 +78,6 @@ add_action('init', 'jquery_update');
   require get_template_directory() . '/inc/custom-posttype.php';
   // Add Custom Taxonomies
   require get_template_directory() . '/inc/custom-taxonomy.php';
+  // Advanced Search Formats
+  require_once('inc/wpas/wpas.php');
+  require get_template_directory() . '/inc/advanced-search.php';

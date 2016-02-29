@@ -10,10 +10,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 @media screen and (max-width:940), (orientation: portrait){
 
-/* BODY
-----------------------*/
+  /* GENERAL
+  ---------------------*/
 .col12 {width:94%;padding:0 3%}
-.col11 {width:99.03%}11
+.col11 {width:99.03%}
 .col10 {width:98.93%}
 .col9 {width:88.82%}
 .col8 {width:78.72%}
@@ -24,5 +24,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 .col3 {width:28.19%}
 .col2 {width:18.09%}
 
-
+/* HEADER
+---------------------*/
+header .logo {top:35%}
+header img {width:90px}
+header ul {height:65px;line-height:65px}
+/* FOOTER
+---------------------*/
+footer .logo {top:-30px}
+footer img {width:65px}
 }

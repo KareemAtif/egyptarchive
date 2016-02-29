@@ -11,18 +11,19 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 BODY
 ---------------------*/
 body {font-family:'Droid Arabic Kufi', sans-serif;direction:rtl}
-a {transition:all 0.2s linear}
-h1 {font-size:32px}
-h2 {font-size:26px}
-h3 {font-size:21px}
-h4 {font-size:18px}
-h5 {font-size:16px}
-h6 {font-size:14px}
-p {font-size:14px;margin:1.2em 0}
+a {transition:all 0.2s linear; color:#ffd140}
+a:hover {color:#f6c053}
+h1 {font-size:32px;font-size:2em}
+h2 {font-size:26px;font-size:1.625em}
+h3 {font-size:21px;font-size:1.313em}
+h4 {font-size:18px;font-size:1.125em}
+h5 {font-size:16px;font-size:1em}
+h6 {font-size:14px;font-size:0.875em}
+p {font-size:14px;font-size:0.875em;margin:1.2em 0}
 
 /* GENERAL
 ---------------------*/
-.col12 {width:1120px;padding:10px;}
+.col12 {width:1120px;padding:0 10px;}
 .col11 {width:1025px}
 .col10 {width:930px}
 .col9 {width:835px}
@@ -41,58 +42,86 @@ p {font-size:14px;margin:1.2em 0}
 h1.lines{font-size:6em;border-width:3px;border-color:#fff}
 h5.lines{border-width:1px;border-color:#01c0a1;color:#01c0a1}
 article {margin:3.6em 0}
+article .header, article .body, article .footer {margin-bottom:1.6em}
+article em {color:#11B99C}
 
 
 /* Collected
 ---------------------*/
-/* MARGIN */
-
-/* POSITION */
-header,footer,header li a {position:relative}
-header li a:after, header .logo, footer .logo {position:absolute}
-/* FLOAT */
-header ul {float:left}
-/* DISPLAY */
-header li a:after {display:block}
-header li,footer li ,footer .credits a {display:inline-block}
- /* TEXT */
-
- /* FONT-WEIGHT */
-footer .main-menu, footer .credits p:last-of-type {font-weight:bold}
- /* COLOR */
-header li a,.error404 article {color:#fff}
+/* COLOR */
+header li a, .error404 article, header .search a:hover i, .search-form input {color:#fff}
 footer, footer a{color:#b7b7b7}
 footer p:first-of-type a {color:#60a0e0}
-header li a:hover, footer a:hover {color:#203040}
+header li a:hover, footer a:hover, header .search a {color:#203040}
+/* DIMENSION */
+header img, footer img {height:auto}
+header img, footer img {max-width:100%}
+/* DISPLAY */
+header li a:after {display:block}
+header li, footer li, .logo a, .credits a {display:inline-block}
+.search a:after, footer .search {display:none}
+/* FLOAT */
+.featured .title {float:right}
+header ul, .featured .controls {float:left}
+/* FONT-WEIGHT */
+article em, footer .main-menu, footer .credits p:last-of-type {font-weight:bold}
+/* MARGIN */
+
+/* PADDING */
+header, main {padding-right:2rem;padding-left:2rem}
+/* POSITION */
+header,footer,header li a,.search-form {position:relative}
+header li a:after, header .logo, footer .logo,.search-form i {position:absolute}
+ /* TEXT */
  /* VERTICAL-ALIGN */
-footer .credits a, footer .credits span {vertical-align: middle;}
+.credits a, .credits span {vertical-align: middle;}
 
 /* HEADER
 ---------------------*/
-header {background:#60a0e0}
+header {background:#60a0e0;}
 header .logo {top:35%}
 header ul {height:100px;line-height:100px}
 header li {margin-right:2.8em}
-header li a:after {left:0;bottom:-5px;width:0;height:3px;background:#203040;content:"";-webkit-transition: all 0.4s;-moz-transition: all 0.4s;-o-transition: all 0.4s;transition: all 0.4s;}
+header li a:after {right:0;bottom:-5px;width:0;height:3px;background:#203040;content:"";-webkit-transition: all 0.4s;-moz-transition: all 0.4s;-o-transition: all 0.4s;transition: all 0.4s;}
 header li a:hover:after {width:100%}
+header .search a {background:#4573a1;padding:3px 10px;border-radius:50%;transition:none;}
+header .search a:hover{background:#203040;border:none;}
+header .search i {color:#203040;font-size:18px!important;}
+
+/* SEARCH FORM
+---------------------*/
+.search-form input {border-bottom:2px solid #01c0a1; font-size: 3em;padding:10px 10px 10px 2em;width:100%;text-indent:25px}
+.search-form i {top:calc(50% - 50px);left:25px;font-size:5em;color:#16212b}
+/* MAIN
+---------------------*/
+main {padding-top:6em}
+
+/* DOCUMENTS
+---------------------*/
+.featured .header {border-bottom:1px solid #ebebeb;padding: 10px 20px}
+.featured h2 {color:#1f3040}
+.featured i {font-size:1.8em;color:#e1e1e1;cursor:pointer}
+.featured i:hover {color: #fb7345}
 
 /* 404
 ---------------------*/
-body.error404 {background:#60a0e0 url('../img/bg-404.png') repeat-x center bottom;background-size:contain;}
+body.error404 {background:#60a0e0 url('../img/bg-404.png') repeat-x center bottom; background-size:contain;}
 
+/* CREDITS
+---------------------*/
+.credits p {font-size:0.75em}
+.credits p:first-of-type {font-size:0.9em}
+.credits img {height:28px;width:auto}
+.credits span {margin:0 10px;font-size:1.8em}
+.credits i {font-size:2.6em}
+.credits br:after {margin-bottom:1em}
 
 /* FOOTER
 ---------------------*/
 footer {border-top:1px solid #ebebeb;margin-top:80px;font-size:0.8em;padding-top:40px;}
-footer .logo {top:-45px;right:0;left:0}
-footer img {width:90px;filter:gray;-webkit-filter:grayscale(100%);filter:grayscale(100%);transition:all linear 0.4s}
+footer .logo {top:-45px;right:0;left:0;width:90px;margin:0 auto}
+footer img {filter:gray;-webkit-filter:grayscale(100%);filter:grayscale(100%);transition:all linear 0.4s}
 footer img:hover {filter:none;-webkit-filter:grayscale(0%)}
  {font-weight:bold}
 footer li {margin:0 10px}
 footer .main-menu {margin:1em 0}
-footer .credits p {font-size:0.75em}
-footer .credits p:first-of-type {font-size:0.9em}
-footer .credits img {height:28px;width:auto}
-footer .credits span {margin:0 10px;font-size:1.8em}
-footer .credits i {font-size:2.6em}
-footer .credits br:after {margin-bottom:1em}

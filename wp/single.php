@@ -6,8 +6,8 @@
 **/
  ?>
  <?php get_header();
-       while(have_posts(): the_post());
+       while(have_posts()): the_post();
         get_template_part('temps/content', 'single');
        endwhile;
- <?php get_sidebar(); ?>
+ get_sidebar(); ?>
  <?php get_footer(); ?>

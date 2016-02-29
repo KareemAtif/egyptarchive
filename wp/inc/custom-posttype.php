@@ -46,3 +46,12 @@ function register_document() {
 	register_post_type( "document", $args );
 }
 add_action( 'init', 'register_document' );
+
+// Include CPT in loop
+function cpt_query($query){
+	if ($query->is_home() && $query->is_main_query() && $query->is_archive()) {
+		$query->set('post_type', array('document'));
+	}
+	return $query;
+}
+add_filter('pre_get_posts', 'cpt_query');
